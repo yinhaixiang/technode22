@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 var routes = require('./routes/index');
 var chatServer = require('./server');
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3002;
 
 var app = express();
 
