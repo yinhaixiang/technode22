@@ -1,0 +1,8 @@
+.idea/*
+/node_modules
+/node_modules/**
+*.log
+node_run
+node_run/**
+.header
+logs/*
