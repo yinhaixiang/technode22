@@ -1,45 +1,45 @@
 <html ng-app="techNodeApp">
 <head>
-    <base href="/" />
-    <meta charset="UTF-8">
-    <title>TechNode</title>
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/rooms.css">
-    <link rel="stylesheet" href="css/room.css">
+  <base href="/"/>
+  <meta charset="UTF-8">
+  <title>TechNode</title>
+  <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/rooms.css">
+  <link rel="stylesheet" href="css/room.css">
 
-    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/angular/angular.js"></script>
-    <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
-    <script type="text/javascript" src="lib/moment/moment.js"></script>
-    <script type="text/javascript" src="lib/angular/angular-moment.min.js"></script>
-    <script type="text/javascript" src="lib/moment/zh-cn.js"></script>
-    <script src="js/technode.js"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+  <script type="text/javascript" src="lib/moment/moment.js"></script>
+  <script type="text/javascript" src="lib/angular/angular-moment.min.js"></script>
+  <script type="text/javascript" src="lib/moment/zh-cn.js"></script>
+  <script src="js/technode.js"></script>
 </head>
 <body>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">TechNode</a>
-        </div>
-        <nav class="collapse navbar-collapse" role="navigation">
-            <ul class="nav navbar-nav navbar-right" ng-show="me">
-                <li>
-                    <img ng-src="{{me.avatarUrl}}" title="{{me.name}}" class="img-rounded"/>
-                </li>
-                <li>
-                    <a href="" ng-click="logout()">Log out</a>
-                </li>
-            </ul>
-        </nav>
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TechNode</a>
     </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right" ng-show="me">
+        <li>
+          <img ng-src="{{me.avatarUrl}}" title="{{me.name}}" class="img-rounded"/>
+        </li>
+        <li>
+          <a href="" ng-click="logout()">Log out</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 <div class="container" style="margin-top:60px;">
-    <div class="row" ng-view></div>
+  <div class="row" ng-view></div>
 </div>
 
 </body>
