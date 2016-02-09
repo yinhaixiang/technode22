@@ -33,7 +33,7 @@ app.run(function ($window, $rootScope, $location) {
 
 app.controller('LoginCtrl', function ($scope, $location, $rootScope, socket) {
     $scope.login = function () {
-        socket.connect('localhost:3002');
+        socket.connect();
         socket.emit('login', $scope.user, function (flag) {
             if(flag) {
                 $location.path('/rooms');
